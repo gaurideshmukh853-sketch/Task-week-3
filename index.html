@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">My Portfolio</h1>
+
+    <button id="toggleMode">🌙 Dark Mode</button>
+
+    <!-- Show / Hide -->
+    <button onclick="toggleContent()">Show / Hide About</button>
+    <div id="about">
+        <p>I am an MCA student learning JavaScript.</p>
+    </div>
+
+    <!-- Image Slider -->
+    <img id="slider" src="img1.jpg" width="300">
+    <button onclick="prevImage()">Prev</button>
+    <button onclick="nextImage()">Next</button>
+
+    <!-- To-Do List -->
+    <h2>To-Do List</h2>
+    <input id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+
+    <!-- Contact Form -->
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <span id="error"></span><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
